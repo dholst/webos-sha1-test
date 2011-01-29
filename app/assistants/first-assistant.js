@@ -30,7 +30,7 @@ var FirstAssistant = Class.create({
 
       div.insert("</table>")
 
-      setTimeout(this.calculateSha1.bind(this, iteration + 1), 100)
+      setTimeout(this.calculateSha1.bind(this, iteration + 1), 10)
     }
   },
 
