@@ -15,8 +15,7 @@ var FirstAssistant = Class.create({
 
   calculateSha1: function(iteration) {
     if(this.stillGoing) {
-      var sha1 = core_sha1([1,2,3,4,5], 160)
-      var result = "" + sha1[0]
+      var result = hex_sha1("abc")
       var count = this.results[result] || 0
       this.results[result] = (count + 1)
       var div = this.controller.get("results")
@@ -24,7 +23,7 @@ var FirstAssistant = Class.create({
 
       for(var r in this.results) {
         if(this.results.hasOwnProperty(r)) {
-          div.insert('<tr><td class="count">' + this.results[r] + '</td><td>' + r + '</td></tr>')
+          div.insert('<tr><td class="count">' + this.results[r] + '</td><td>' + r.substr(0,16) + '</td></tr>')
         }
       }
 
