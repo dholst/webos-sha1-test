@@ -29,6 +29,12 @@
 }
 
 .count {
+  text-align: right;
   width: 50px;
   padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notice {
+  padding: 4px 4px;
 }

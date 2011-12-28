@@ -1,9 +1,9 @@
 {
-	"id": "com.mycompany.myapp",
-	"version": "0.0.1",
-	"vendor": "MyCompany",
+	"id": "org.webosinternals.sha1test",
+	"version": "1.0.0",
+	"vendor": "WebOS Internals",
 	"type": "web",
 	"main": "index.html",
-	"title": "My App",
+	"title": "SHA1 Test",
 	"icon": "icon.png"
 }
